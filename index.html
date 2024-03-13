@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .todo-list {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .todo-item {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .todo-item:hover {
+      background-color: #f0f0f0;
+    }
+    .btn-add {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-add:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="todo-list">
+          <h2 class="text-center mb-4">To-Do List</h2>
+          <ul class="list-group">
+            <li class="list-group-item todo-item">Going to School at exactly 11am in the morning</li>
+            <li class="list-group-item todo-item">Brush my teeth</li>
+            <li class="list-group-item todo-item">Ironing my hair</li>
+          </ul>
+          <div class="form-group mt-4">
+            <input type="text" class="form-control" placeholder="Add new task">
+          </div>
+          <button class="btn btn-add btn-block">Add Task</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
